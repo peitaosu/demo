@@ -92,14 +92,14 @@ def TypeKey(hexKeyCode):
 
 if __name__ == "__main__":
     # win + R
-    PressKey(int(code["VK_LWIN"],16))
-    PressKey(int(code["K_R"],16))
-    ReleaseKey(int(code["K_R"],16))
-    ReleaseKey(int(code["VK_LWIN"],16))
+    PressKey(code["VK_LWIN"])
+    PressKey(code["K_R"])
+    ReleaseKey(code["K_R"])
+    ReleaseKey(code["VK_LWIN"])
     time.sleep(1)
     # c + m + d + enter
-    TypeKey(int(code["K_C"],16))
-    TypeKey(int(code["K_M"],16))
-    TypeKey(int(code["K_D"],16))
-    TypeKey(int(code["VK_RETURN"],16))
+    TypeKey(code["K_C"])
+    TypeKey(code["K_M"])
+    TypeKey(code["K_D"])
+    TypeKey(code["VK_RETURN"])
     time.sleep(2)
