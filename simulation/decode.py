@@ -5,8 +5,8 @@ from string type hex code to integer in json file.
 
 import os, re
 
-file_in = open('./virtual_key_hex_code.json', 'r')
-file_out = open('./virtual_key_code.json','w')
+file_in = open(__file__+'/../virtual_key_hex_code.json', 'r')
+file_out = open(__file__+'/../virtual_key_code.json','w')
 
 for line in file_in.readlines():
     is_head = re.search('{', line)

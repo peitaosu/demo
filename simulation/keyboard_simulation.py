@@ -1,4 +1,4 @@
-import platform, json, time
+import os, platform, json, time
 
 code_type = "Undefined"
 os = platform.system()
@@ -9,7 +9,7 @@ elif os == "Linux":
     import keyboard_simulation_linux as key
     code_type = "key_sym"
 
-with open('./key_mapping.json', 'r') as file:
+with open(__file__+'/../key_mapping.json', 'r') as file:
     code = json.load(file)
 
 def PressKey(key_str):

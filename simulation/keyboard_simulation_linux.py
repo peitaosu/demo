@@ -17,7 +17,7 @@ def TypeKey(keysym):
 def test():
     # get keysyms code from json file ./keysyms.json
     # keysyms code is from https://www.tcl.tk/man/tcl8.4/TkCmd/keysyms.htm
-    with open('./keysyms.json', 'r') as file:
+    with open(__file__+'/../keysyms.json', 'r') as file:
         code = json.load(file)
 
     # ctrl + alt + t

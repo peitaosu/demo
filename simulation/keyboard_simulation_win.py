@@ -88,7 +88,7 @@ def TypeKey(hexKeyCode):
 def test():
     # get virtual key code from json file ./virtual_key_code.json
     # virtual key code is from msdn.microsoft.com/en-us/library/dd375731
-    with open('./virtual_key_code.json', 'r') as file:
+    with open(__file__+'/../virtual_key_code.json', 'r') as file:
         code = json.load(file)
 
     # win + R
