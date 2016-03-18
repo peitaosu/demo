@@ -15,11 +15,6 @@ KEYEVENTF_SCANCODE    = 0x0008
 
 MAPVK_VK_TO_VSC = 0
 
-# get virtual key code from json file ./virtual_key_code.json
-# virtual key code is from msdn.microsoft.com/en-us/library/dd375731
-with open('./virtual_key_code.json', 'r') as file:
-    code = json.load(file)
-
 # C struct definitions
 
 wintypes.ULONG_PTR = wintypes.WPARAM
@@ -90,13 +85,19 @@ def TypeKey(hexKeyCode):
     PressKey(hexKeyCode)
     ReleaseKey(hexKeyCode)
 
-if __name__ == "__main__":
+def test():
+    # get virtual key code from json file ./virtual_key_code.json
+    # virtual key code is from msdn.microsoft.com/en-us/library/dd375731
+    with open('./virtual_key_code.json', 'r') as file:
+        code = json.load(file)
+
     # win + R
     PressKey(code["VK_LWIN"])
     PressKey(code["K_R"])
     ReleaseKey(code["K_R"])
     ReleaseKey(code["VK_LWIN"])
     time.sleep(1)
+
     # c + m + d + enter
     TypeKey(code["K_C"])
     TypeKey(code["K_M"])
