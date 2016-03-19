@@ -6,13 +6,13 @@ def move(x, y):
     user32.SetCursorPos(x, y)
 
 def press(x, y, button=1):
-    button_action = 2 ** ((2 * button) - 1)
     move(x, y)
+    button_action = 2 ** ((2 * button) - 1)
     user32.mouse_event(button_action, x, y)
 
 def release(x, y, button=1):
-    button_action = 2 ** (2 * button)
     move(x, y)
+    button_action = 2 ** (2 * button)
     user32.mouse_event(button_action, x, y)
 
 def click(x, y, button=1):
