@@ -39,109 +39,109 @@
 		"vk_code": 57,
 		"key_sym": 57
 	},
-	"A": {
+	"a": {
 		"vk_code": 65,
-		"key_sym": 65
+		"key_sym": 97
 	},
-	"B": {
+	"b": {
 		"vk_code": 66,
-		"key_sym": 66
+		"key_sym": 98
 	},
-	"C": {
+	"c": {
 		"vk_code": 67,
-		"key_sym": 67
+		"key_sym": 99
 	},
-	"D": {
+	"d": {
 		"vk_code": 68,
-		"key_sym": 68
+		"key_sym": 100
 	},
-	"E": {
+	"e": {
 		"vk_code": 69,
-		"key_sym": 69
+		"key_sym": 101
 	},
-	"F": {
+	"f": {
 		"vk_code": 70,
-		"key_sym": 70
+		"key_sym": 102
 	},
-	"G": {
+	"g": {
 		"vk_code": 71,
-		"key_sym": 71
+		"key_sym": 103
 	},
-	"H": {
+	"h": {
 		"vk_code": 72,
-		"key_sym": 72
+		"key_sym": 104
 	},
-	"I": {
+	"i": {
 		"vk_code": 73,
-		"key_sym": 73
+		"key_sym": 105
 	},
-	"J": {
+	"j": {
 		"vk_code": 74,
-		"key_sym": 74
+		"key_sym": 106
 	},
-	"K": {
+	"k": {
 		"vk_code": 75,
-		"key_sym": 75
+		"key_sym": 107
 	},
-	"L": {
+	"l": {
 		"vk_code": 76,
-		"key_sym": 76
+		"key_sym": 108
 	},
-	"M": {
+	"m": {
 		"vk_code": 77,
-		"key_sym": 77
+		"key_sym": 109
 	},
-	"N": {
+	"n": {
 		"vk_code": 78,
-		"key_sym": 78
+		"key_sym": 110
 	},
-	"O": {
+	"o": {
 		"vk_code": 79,
-		"key_sym": 79
+		"key_sym": 111
 	},
-	"P": {
+	"p": {
 		"vk_code": 80,
-		"key_sym": 80
+		"key_sym": 112
 	},
-	"Q": {
+	"q": {
 		"vk_code": 81,
-		"key_sym": 81
+		"key_sym": 113
 	},
-	"R": {
+	"r": {
 		"vk_code": 82,
-		"key_sym": 82
+		"key_sym": 114
 	},
-	"S": {
+	"s": {
 		"vk_code": 83,
-		"key_sym": 83
+		"key_sym": 115
 	},
-	"T": {
+	"t": {
 		"vk_code": 84,
-		"key_sym": 84
+		"key_sym": 116
 	},
-	"U": {
+	"u": {
 		"vk_code": 85,
-		"key_sym": 85
+		"key_sym": 117
 	},
-	"V": {
+	"v": {
 		"vk_code": 86,
-		"key_sym": 86
+		"key_sym": 118
 	},
-	"W": {
+	"w": {
 		"vk_code": 87,
-		"key_sym": 87
+		"key_sym": 119
 	},
-	"X": {
+	"x": {
 		"vk_code": 88,
-		"key_sym": 88
+		"key_sym": 120
 	},
-	"Y": {
+	"y": {
 		"vk_code": 89,
-		"key_sym": 89
+		"key_sym": 121
 	},
-	"Z": {
+	"z": {
 		"vk_code": 90,
-		"key_sym": 90
+		"key_sym": 122
 	},
 	"F1": {
 		"vk_code": 112,

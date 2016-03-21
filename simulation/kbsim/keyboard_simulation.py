@@ -24,23 +24,23 @@ def TypeKey(key_str):
 
 def test():
     if system == "Windows":
-        # Win + R
+        # Win + r
         PressKey("WIN")
-        PressKey("R")
-        ReleaseKey("R")
+        PressKey("r")
+        ReleaseKey("r")
         ReleaseKey("WIN")
         time.sleep(2)
-        # C + M + D
-        TypeKey("C")
-        TypeKey("M")
-        TypeKey("D")
+        # c + m + d
+        TypeKey("c")
+        TypeKey("m")
+        TypeKey("d")
         # ENTER
         TypeKey("ENTER")
     elif system == "Linux":
-        # Ctrl + Alt + T
+        # Ctrl + Alt + t
         PressKey("CTRL")
         PressKey("ALT")
-        PressKey("T")
-        ReleaseKey("T")
+        PressKey("t")
+        ReleaseKey("t")
         ReleaseKey("ALT")
         ReleaseKey("CTRL")
