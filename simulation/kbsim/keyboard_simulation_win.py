@@ -1,6 +1,6 @@
 import ctypes
 from ctypes import wintypes
-import time, json
+import os, time, json
 
 user32 = ctypes.WinDLL('user32', use_last_error=True)
 
@@ -88,7 +88,7 @@ def TypeKey(hexKeyCode):
 def test():
     # get virtual key code from json file ./virtual_key_code.json
     # virtual key code is from msdn.microsoft.com/en-us/library/dd375731
-    with open(__file__+'/../virtual_key_code.json', 'r') as file:
+    with open(os.getcwd()+'/virtual_key_code.json', 'r') as file:
         code = json.load(file)
 
     # win + R
