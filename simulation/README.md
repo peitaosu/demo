@@ -17,6 +17,6 @@ Example:
     import mssim.keyboard_simulation as ms_sim
     
     def run():
-        kb_sim.TypeKey("A")
+        kb_sim.TypeKey("a")
         ms_sim.Click(200, 200, 1)
 
