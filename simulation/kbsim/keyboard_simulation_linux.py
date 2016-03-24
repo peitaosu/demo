@@ -1,4 +1,4 @@
-import virtkey, os, json, time
+import virtkey, os, inspect, json, time
 
 def PressKey(keysym):
     vk = virtkey.virtkey()
@@ -17,7 +17,14 @@ def TypeKey(keysym):
 def test():
     # get keysyms code from json file ./keysyms.json
     # keysyms code is from https://www.tcl.tk/man/tcl8.4/TkCmd/keysyms.htm
-    with open(os.getcwd()+'/keysyms.json', 'r') as file:
+    file_dir = os.path.dirname(inspect.getfile(inspect.currentframe()))
+    file_name = 'keysyms.json'
+
+    if len(file_dir) == 0:
+        file_dir = file_name
+    else:
+        file_dir = file_dir + '/' + file_name
+    with open(file_dir, 'r') as file:
         code = json.load(file)
 
     # ctrl + alt + t
