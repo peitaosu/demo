@@ -184,55 +184,55 @@
 		"key_sym": 65479
 	},
 
-	"SHIFT": {
+	"shift": {
 		"vk_code": 16,
 		"key_sym": 65505
 	},
-	"CTRL": {
+	"ctrl": {
 		"vk_code": 17,
 		"key_sym": 65507
 	},
-	"ALT": {
+	"alt": {
 		"vk_code": 18,
 		"key_sym": 65513
 	},
-	"TAB": {
+	"tab": {
 		"vk_code": 9,
 		"key_sym": 65417
 	},
-	"SPACE": {
+	"space": {
 		"vk_code": 32,
 		"key_sym": 65408
 	},
-	"ENTER": {
+	"enter": {
 		"vk_code": 13,
 		"key_sym": 65421
 	},
-	"BACK": {
+	"back": {
 		"vk_code": 8,
 		"key_sym": 65288
 	},
-	"ESC": {
+	"esc": {
 		"vk_code": 27,
 		"key_sym": 65307
 	},
-	"WIN": {
+	"win": {
 		"vk_code": 91,
 		"key_sym": 65371
 	},
-	"UP": {
+	"up": {
 		"vk_code": 38,
 		"key_sym": 65362
 	},
-	"DOWN": {
+	"down": {
 		"vk_code": 40,
 		"key_sym": 65364
 	},
-	"LEFT": {
+	"left": {
 		"vk_code": 37,
 		"key_sym": 65361
 	},
-	"RIGHT": {
+	"right": {
 		"vk_code": 39,
 		"key_sym": 65363
 	}

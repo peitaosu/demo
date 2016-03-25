@@ -26,28 +26,32 @@ def ReleaseKey(key_str):
     key.ReleaseKey(code[key_str][code_type])
 
 def TypeKey(key_str):
-    key.PressKey(code[key_str][code_type])
-    key.ReleaseKey(code[key_str][code_type])
+    key_str = key_str.lower().split('+')
+    for key_press in key_str:
+        key.PressKey(code[key_press][code_type])
+    for key_release in key_str:
+        key.ReleaseKey(code[key_release][code_type])
 
 def test():
     if system == "Windows":
-        # Win + r
-        PressKey("WIN")
+        # win + r
+        PressKey("win")
         PressKey("r")
         ReleaseKey("r")
-        ReleaseKey("WIN")
+        ReleaseKey("win")
         time.sleep(2)
         # c + m + d
         TypeKey("c")
         TypeKey("m")
         TypeKey("d")
         # ENTER
-        TypeKey("ENTER")
+        TypeKey("enter")
     elif system == "Linux":
-        # Ctrl + Alt + t
-        PressKey("CTRL")
-        PressKey("ALT")
+        # ctrl + alt + t
+        PressKey("ctrl")
+        PressKey("alt")
         PressKey("t")
         ReleaseKey("t")
-        ReleaseKey("ALT")
-        ReleaseKey("CTRL")
+        ReleaseKey("alt")
+        ReleaseKey("ctrl")
+        TypeKey("ctrl+alt+t")
