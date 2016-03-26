@@ -18,5 +18,7 @@ Example:
     
     def run():
         kb_sim.TypeKey("a")
+        # use shortcut, only TypeKey() supported
+        kb_sim.TypeKey("ctrl+alt+t")
         ms_sim.Click(200, 200, 1)
 
