@@ -1,4 +1,4 @@
-import os, platform, json, time
+import os, sys, inspect, platform, json, time
 
 code_type = "Undefined"
 system = platform.system()
@@ -9,7 +9,14 @@ elif system == "Linux":
     import keyboard_simulation_linux as key
     code_type = "key_sym"
 
-with open(os.getcwd()+'/key_mapping.json', 'r') as file:
+file_dir = os.path.dirname(inspect.getfile(inspect.currentframe()))
+file_name = 'key_mapping.json'
+
+if len(file_dir) == 0:
+    file_dir = file_name
+else:
+    file_dir = file_dir + '/' + file_name
+with open(file_dir, 'r') as file:
     code = json.load(file)
 
 def PressKey(key_str):
@@ -19,28 +26,32 @@ def ReleaseKey(key_str):
     key.ReleaseKey(code[key_str][code_type])
 
 def TypeKey(key_str):
-    key.PressKey(code[key_str][code_type])
-    key.ReleaseKey(code[key_str][code_type])
+    key_str = key_str.lower().split('+')
+    for key_press in key_str:
+        key.PressKey(code[key_press][code_type])
+    for key_release in key_str:
+        key.ReleaseKey(code[key_release][code_type])
 
 def test():
     if system == "Windows":
-        # Win + r
-        PressKey("WIN")
+        # win + r
+        PressKey("win")
         PressKey("r")
         ReleaseKey("r")
-        ReleaseKey("WIN")
+        ReleaseKey("win")
         time.sleep(2)
         # c + m + d
         TypeKey("c")
         TypeKey("m")
         TypeKey("d")
         # ENTER
-        TypeKey("ENTER")
+        TypeKey("enter")
     elif system == "Linux":
-        # Ctrl + Alt + t
-        PressKey("CTRL")
-        PressKey("ALT")
+        # ctrl + alt + t
+        PressKey("ctrl")
+        PressKey("alt")
         PressKey("t")
         ReleaseKey("t")
-        ReleaseKey("ALT")
-        ReleaseKey("CTRL")
+        ReleaseKey("alt")
+        ReleaseKey("ctrl")
+        TypeKey("ctrl+alt+t")
